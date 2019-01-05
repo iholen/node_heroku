@@ -28,6 +28,6 @@ app.get('/', function(req, res, next){
 		})
 })
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 5000, function(){
 	console.log('Node server start on port 3000')	
 })
